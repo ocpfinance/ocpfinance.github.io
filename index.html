@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Groupe OCP — Immobilier, Innovation, Cinéma</title>
+  <meta name="description" content="Groupe OCP développe une activité diversifiée dans les domaines de l’immobilier, de l’innovation et de la production cinématographique.">
+  <link rel="icon" href="assets/images/icon.png">
+  <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="#accueil" aria-label="Groupe OCP — retour à l’accueil">
+      <img class="picto" src="assets/images/logo_picto.svg" alt="Groupe OCP" width="190" height="51">
+      <img class="baseline" src="assets/images/logo_baseline.svg" alt="" width="190" height="18">
+    </a>
+    <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#immobilier">Immobilier</a></li>
+        <li><a href="#innovation">Innovation</a></li>
+        <li><a href="#cinema">Cinéma</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================================================================ ACCUEIL -->
+  <section id="accueil" aria-label="Accueil">
+    <h1 class="sr-only">Groupe OCP — Immobilier, Innovation, Cinéma</h1>
+
+    <div class="hero" data-slider>
+      <div class="slide is-active" role="img" aria-label="Bureaux Groupe OCP à Paris" style="background-image:url(assets/images/Groupe-OCP-Paris-home-immobilier-bureau-flexible-1.jpg)"></div>
+      <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-home-immobilier-bureau-flexible-2.jpg)"></div>
+      <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-home-immobilier-bureau-flexible-3.jpg)"></div>
+    </div>
+
+    <div class="intro-row" style="background:var(--beige)">
+      <div class="content" style="background-color:#ede9e5">
+        <h2>Présentation</h2>
+        <p>Groupe OCP développe une activité diversifiée dans les domaines de l’immobilier, de l’innovation et de la production cinématographique.</p>
+        <p>Par intérêt pour l’innovation, Groupe OCP a créé ou financé une trentaine de sociétés de développement logiciel (Qapa, PeopleDoc, Le Collectionist…).</p>
+        <p>Par passion pour l’art et la culture, Groupe OCP a investi dans la production de plus de 100 films français via sa filiale Cineventure (Les Misérables, Roubaix une lumière, Le Bureau des légendes…).</p>
+        <p>Enfin, le goût des belles pierres et de l’histoire a conduit Groupe OCP à investir de façon audacieuse dans l’immobilier parisien grâce au développement d’une offre de bureaux équipés avec services.</p>
+        <p>Groupe OCP est ainsi engagé au quotidien dans une démarche de valorisation et de préservation du patrimoine matériel et immatériel français, mission dont il s’efforce de s’acquitter avec respect et enthousiasme.</p>
+      </div>
+      <div class="citation" style="background-color:#c49e67">
+        <p>Un acteur indépendant, une grande liberté d’action</p>
+      </div>
+    </div>
+
+    <div class="intro-row is-even">
+      <div class="content" style="background-color:#fff">
+        <h2>Convictions</h2>
+        <p>Grâce à une dynamique d’investissement ingénieuse et exigeante, Groupe OCP s’efforce de créer une asymétrie d’information par rapport au marché afin d’accéder à des actifs d’exception dans le cadre de processus de vente confidentiels.</p>
+        <p>La stratégie d’acquisition porte principalement sur des immeubles à restructurer ou des sites industriels à transformer de manière à minimiser le coût d’acquisition, maximiser la rentabilité des opérations et offrir une forte résilience aux mouvements de marché.</p>
+        <p>En accordant une importance particulière à la connaissance, l’éthique et la discrétion dans la conduite de ses opérations, Groupe OCP a su se démarquer pour devenir un acteur de référence de l’immobilier de bureau parisien.</p>
+      </div>
+      <div class="citation" style="background-color:#030303">
+        <p>Une pratique basée sur la connaissance, l’éthique et la discrétion</p>
+      </div>
+    </div>
+
+    <div class="activites">
+      <div class="container">
+        <h2>Secteurs d’activité</h2>
+        <div class="activites-grid">
+          <a href="#immobilier" class="activite reveal" style="border-color:#c49e67">
+            <h3>Immobilier</h3>
+            <span class="more">En savoir +</span>
+          </a>
+          <a href="#innovation" class="activite reveal" style="border-color:#66a3b9">
+            <h3>Innovation</h3>
+            <span class="more">En savoir +</span>
+          </a>
+          <a href="#cinema" class="activite reveal" style="border-color:#7a3e66">
+            <h3>Cinéma</h3>
+            <span class="more">En savoir +</span>
+          </a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="assets/images/Groupe-OCP-Paris-home-immobilier-bureau-flexible-4.jpg" alt="Espaces de bureaux Groupe OCP" loading="lazy" width="1400" height="500">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ IMMOBILIER -->
+  <section id="immobilier" aria-labelledby="immobilier-title">
+    <div class="band is-gold">
+      <h2 class="band-title" id="immobilier-title">Un savoir-faire exigeant : acquérir, transformer, exploiter.</h2>
+    </div>
+
+    <div class="container savoir-faire">
+      <div class="content">
+        <p>Depuis 2013, Groupe OCP se concentre principalement sur l’acquisition d’immeubles à Paris en vue de les exploiter dans le cadre d’une activité de bureaux équipés avec services, à destination de sociétés de taille intermédiaire ou de grands groupes (SNCF, Institut Curie, Malt…).</p>
+        <p>Pour réaliser le potentiel de ses actifs, Groupe OCP exerce une maîtrise d’ouvrage impliquée, au plus proche des projets de rénovation ou de transformation. Le caractère historique du patrimoine détenu oblige à apporter le plus grand soin aux ouvrages et aux aménagements.</p>
+      </div>
+    </div>
+
+    <div class="container numbers">
+      <h2>Chiffres clés</h2>
+      <div class="numbers-grid">
+        <div class="number"><span data-chiffre="45000">0</span> <div class="legende">M² à Paris</div></div>
+        <div class="number"><span data-chiffre="30">0</span> <div class="legende">Opérations</div></div>
+        <div class="number"><span data-chiffre="8">0</span> <div class="legende">Projets en restructuration</div></div>
+      </div>
+    </div>
+
+    <div class="contenu-block">
+      <div class="container">
+        <h2>Acquérir</h2>
+        <div class="slider" data-slider>
+          <div class="slides">
+            <div class="slide is-active" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-centre-d-affaire-acquisition-1.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-centre-d-affaire-acquisition-2.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-centre-d-affaire-acquisition-3.jpg)"></div>
+          </div>
+          <button class="slider-nav prev" type="button" aria-label="Image précédente"></button>
+          <button class="slider-nav next" type="button" aria-label="Image suivante"></button>
+        </div>
+        <div class="columns">
+          <div class="texte">
+            <p>La stratégie d’acquisition du Groupe OCP cible des actifs immobiliers à fort potentiel présentant souvent une complexité d’ordre juridique, administrative ou technique, et comprenant aussi bien des immeubles d’une grande valeur patrimoniale à restructurer, que des sites industriels amenés à être intégralement transformés.</p>
+          </div>
+          <div class="texte">
+            <p>Cette approche originale permet au Groupe OCP d’optimiser le coût d’acquisition des actifs et d’offrir une forte résilience aux mouvements de marché.</p>
+            <p>Dans un contexte de forte pénurie d’espaces de bureau et au regard du caractère particulièrement centralisé de l’économie française, l’investissement dans l’immobilier parisien demeure particulièrement attractif.</p>
+          </div>
+          <div class="texte">
+            <p>Un effort de veille permanent sur tous les canaux permet au Groupe OCP d’accéder à des processus de vente confidentiels dans lesquels l’assise financière et la sagacité sont déterminantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenu-block">
+      <div class="container">
+        <h2>Restructurer</h2>
+        <div class="slider" data-slider>
+          <div class="slides">
+            <div class="slide is-active" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-restructuration-2.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-restructuration-4.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-restructuration-1.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-restructuration-3.jpg)"></div>
+          </div>
+          <button class="slider-nav prev" type="button" aria-label="Image précédente"></button>
+          <button class="slider-nav next" type="button" aria-label="Image suivante"></button>
+        </div>
+        <div class="columns">
+          <div class="texte">
+            <p>Par l’acquisition d’immeubles d’exception ou à fort potentiel de transformation, Groupe OCP s’inscrit dans une démarche respectueuse et engagée de valorisation et de préservation du patrimoine parisien.</p>
+            <p>La vision du Groupe OCP est celle d’une maîtrise d’ouvrage impliquée qui supervise avec soin les étapes nécessaires à la restructuration et la transformation des biens. Pour ce faire, Groupe OCP s’appuie sur un réseau d’excellence constitué d’architectes tels que <a href="https://www.chartier-dalix.com/" target="_blank" rel="noopener">Chartier Dalix</a> ou <a href="http://www.h2oarchitectes.com/" target="_blank" rel="noopener">h2o</a> et de bureaux d’études aux expertises reconnues comme <a href="http://www.equilibre-structures.fr/" target="_blank" rel="noopener">Équilibre Structures</a> ou <a href="http://www.rfr-elements.com/" target="_blank" rel="noopener">Éléments Ingénieries</a>.</p>
+          </div>
+          <div class="texte">
+            <p>Un même cahier des charges est appliqué à toutes les réalisations.</p>
+            <p>Une adaptation minutieuse et pointue du bâti, qui se détache des logiques performancielles standardisées pour se recentrer sur les besoins des usagers.</p>
+            <p>Une conception robuste et facile à exploiter sur le long terme, l’intégration de l’économie du projet dès la phase de conception.</p>
+            <p>Une valorisation respectueuse de l’histoire et de la singularité des bâtiments d’origine.</p>
+          </div>
+          <div class="block" style="background-color:#c49e67">
+            <p>« Nos artistes doivent trouver la poésie des gares, comme leurs pères ont trouvé celle des forêts et des fleuves. » Émile Zola</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenu-block">
+      <div class="container">
+        <h2>Exploiter</h2>
+        <div class="slider" data-slider>
+          <div class="slides">
+            <div class="slide is-active" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-exploitation-1.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-exploitation-2.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-exploitation-3.jpg)"></div>
+            <div class="slide" style="background-image:url(assets/images/Groupe-OCP-Paris-immobilier-bureau-flexible-exploitation-4.jpg)"></div>
+          </div>
+          <button class="slider-nav prev" type="button" aria-label="Image précédente"></button>
+          <button class="slider-nav next" type="button" aria-label="Image suivante"></button>
+        </div>
+        <div class="columns">
+          <div class="texte">
+            <p>Le Groupe OCP intègre les nouveaux modes de travail en proposant des bureaux aménagés avec services. En effet, depuis une dizaine d’années, les utilisateurs privilégient la valeur d’usage des bureaux avec une exigence accrue en matière d’aménagements et de bien-être des salariés.</p>
+            <p>Popularisé par les sociétés de la Silicon Valley, le modèle d’organisation combinant espaces conviviaux, vastes open-spaces et bureaux traditionnels est désormais largement plébiscité en France dans tous les secteurs.</p>
+          </div>
+          <div class="texte">
+            <p>Groupe OCP accompagne cette évolution avec un positionnement visant principalement les grands groupes et les sociétés de taille intermédiaire dans le cadre de contrats à moyen-long terme. Grâce à une offre qualitative et à la fourniture de services, Groupe OCP augmente significativement la rentabilité de ses actifs.</p>
+            <p>A ce jour, Groupe OCP détient et exploite 28 immeubles, principalement à Paris dans les arrondissements centraux.</p>
+          </div>
+          <div class="block" style="background-color:#7a3e66">
+            <p>Des espaces de travail soignés qui s’inscrivent dans l’histoire de Paris.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="implantations" id="implantations">
+      <div class="container">
+        <h2>Implantations</h2>
+      </div>
+      <div id="map" aria-label="Carte des implantations de Groupe OCP à Paris"></div>
+      <div class="container">
+        <div class="implantation-list" id="implantation-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ INNOVATION -->
+  <section id="innovation" aria-labelledby="innovation-title">
+    <div class="band is-teal">
+      <h2 class="band-title" id="innovation-title">Innovation</h2>
+    </div>
+    <div class="img-header">
+      <img src="assets/images/Groupe-OCP-Paris-innovation-societe-innovante-immobilier-bureau-flexible-1.jpg" alt="" loading="lazy" width="1500" height="500">
+    </div>
+
+    <div class="container savoir-faire">
+      <div class="content">
+        <p>Depuis une dizaine d’années, les nouvelles applications prennent souvent la forme d’applications webs ou mobiles qui se focalisent sur le service rendu plutôt que sur le logiciel en lui-même (SaaS). Ce secteur connaît une très forte croissance dans la mesure où ces solutions permettent une meilleure gestion des coûts (les clients ne paient que ce qu’ils consomment), sont rapides à déployer et améliorent la productivité, notamment grâce à un hébergement à distance.</p>
+        <p>Dans ce contexte, Groupe OCP a créé et accompagné de nombreuses sociétés innovantes sur la base d’une stratégie consistant à ouvrir ou digitaliser certains marchés. À travers ses différentes filiales, il a pris une trentaine de participations majoritaires et minoritaires dans des entreprises leaders de leurs domaines respectifs : DemanderJustice.com (services juridiques en ligne), PeopleDoc (logiciels de gestion RH), Qapa (plateforme digitale de recrutement par interim), Le Collectionist (location de vacances sur mesure), SeDomicilier.fr (domiciliation commerciale en ligne)…</p>
+      </div>
+    </div>
+
+    <div class="container numbers is-teal-text">
+      <h2>Chiffres clés</h2>
+      <div class="numbers-grid">
+        <div class="number"><span data-chiffre="26">0</span> <span class="unit">M€</span><div class="legende">Investis</div></div>
+        <div class="number"><span data-chiffre="6">0</span> <div class="legende">Structures créées</div></div>
+        <div class="number"><span data-chiffre="30">0</span> <div class="legende">Sociétés accompagnées</div></div>
+      </div>
+    </div>
+
+    <div class="container investissements">
+      <h2>Exemples d’investissements</h2>
+      <div class="logo-grid">
+        <div class="logo-card reveal" tabindex="0">
+          <img src="assets/images/QAPA-logo.png" alt="Qapa" loading="lazy">
+          <div class="hover">
+            <p>Qapa est une plateforme digitale de recrutement par intérim. Elle met en relation en quelques heures des PME et des grandes avec des demandeurs d’emploi en intérim, grâce à une puissante application disponible sur mobile et sur internet. Elle vient d’être rachetée en 2021 par Adecco.</p>
+            <p><a href="https://www.qapa.fr/" target="_blank" rel="noopener">www.qapa.fr</a></p>
+          </div>
+        </div>
+        <div class="logo-card reveal" tabindex="0">
+          <img src="assets/images/Groupe-OCP-Paris-innovation-societe-innovante-immobilier-bureau-flexible-3.jpg" alt="SeDomicilier" loading="lazy">
+          <div class="hover">
+            <p>SeDomicilier est leader sur le marché de la domiciliation d’entreprises en ligne, avec une implantation dans plus de 15 villes en France.</p>
+            <p><a href="http://www.sedomicilier.fr" target="_blank" rel="noopener">www.sedomicilier.fr</a></p>
+          </div>
+        </div>
+        <div class="logo-card reveal" tabindex="0">
+          <img src="assets/images/Groupe-OCP-Paris-innovation-societe-innovante-immobilier-bureau-flexible-4.jpg" alt="PeopleDoc" loading="lazy">
+          <div class="hover">
+            <p>La société PeopleDoc, spécialisée dans la dématérialisation de documents RH, a été rachetée en 2018 par le géant américain Ultimate Software.</p>
+            <p><a href="http://www.people-doc.fr" target="_blank" rel="noopener">www.people-doc.fr</a></p>
+          </div>
+        </div>
+        <div class="logo-card reveal" tabindex="0">
+          <img src="assets/images/Groupe-OCP-Paris-innovation-societe-innovante-immobilier-bureau-flexible-5.jpg" alt="Alltricks" loading="lazy">
+          <div class="hover">
+            <p>Alltricks, site de vente en ligne spécialisé dans l’univers du vélo, du running et de l’outdoor, a été cédé à Decathlon en 2019.</p>
+            <p><a href="http://www.alltricks.fr" target="_blank" rel="noopener">www.alltricks.fr</a></p>
+          </div>
+        </div>
+        <div class="logo-card reveal" tabindex="0">
+          <img src="assets/images/Groupe-OCP-Paris-innovation-societe-innovante-immobilier-bureau-flexible-6.jpg" alt="Le Collectionist" loading="lazy">
+          <div class="hover">
+            <p>Le Collectionist est un site français de réservation de vacances sur mesure qui propose à la location un catalogue de plus de 1 000 villas, chalets et appartements exceptionnels.</p>
+            <p><a href="http://www.lecollectionist.com" target="_blank" rel="noopener">www.lecollectionist.com</a></p>
+          </div>
+        </div>
+        <div class="logo-card reveal" tabindex="0">
+          <img src="assets/images/Groupe-OCP-Paris-innovation-societe-innovante-immobilier-bureau-flexible-7.jpg" alt="Demander Justice" loading="lazy">
+          <div class="hover">
+            <p>Le groupe Demander Justice, pionnier de la Legal Tech européenne, édite les sites Litige.fr et SaisirPrudhommes.com, permettant de résoudre les litiges du quotidien directement par Internet et sans avoir recours à un avocat.</p>
+            <p><a href="http://www.demanderjustice.com" target="_blank" rel="noopener">www.demanderjustice.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ CINÉMA -->
+  <section id="cinema" aria-labelledby="cinema-title">
+    <div class="band is-purple">
+      <h2 class="band-title" id="cinema-title">Production cinématographique</h2>
+    </div>
+    <div class="img-header">
+      <img src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-1-1.jpg" alt="" loading="lazy" width="1500" height="500">
+    </div>
+
+    <div class="container savoir-faire">
+      <a class="brand" href="https://www.cineventure.fr/" target="_blank" rel="noopener">
+        <img src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-.png" alt="Cineventure" loading="lazy">
+      </a>
+      <div class="content">
+        <p>Cultiver l’investissement en investissant la culture, tel fût le sens de la création de <a href="https://www.cineventure.fr/" target="_blank" rel="noopener">Cineventure</a> en 2015, SOFICA du Groupe OCP. Fonds d’investissement privés spécialisés dans le secteur du cinéma et de l’audiovisuel, les SOFICA contribuent chaque année à la production de plus d’un tiers des films français.</p>
+        <p><a href="https://www.cineventure.fr/" target="_blank" rel="noopener">Cineventure</a> a été créée en association avec Le Pacte, acteur historique et incontournable du cinéma français, affichant des objectifs ambitieux. Les fonds investis sont versés en association à la production en contrepartie de droits à recettes provenant de l’exploitation des oeuvres dans les salles de cinéma, en DVD, en VOD et à la télévision, à la fois en France et à l’étranger.</p>
+      </div>
+    </div>
+
+    <div class="container numbers is-purple-text">
+      <h2>Chiffres clés</h2>
+      <div class="numbers-grid">
+        <div class="number"><span data-chiffre="22.1">0</span> <span class="unit">M€</span><div class="legende">Investis</div></div>
+        <div class="number"><span data-chiffre="120">0</span> <div class="legende">Investissements en production de films et séries</div></div>
+        <div class="number"><span data-chiffre="50">0</span> <div class="legende">Sélections en festivals internationaux</div></div>
+      </div>
+    </div>
+
+    <div class="container movies">
+      <h2>Exemples de films produits</h2>
+      <div class="movies-grid">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-2.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-3.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-4.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-5.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-6.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-7.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-8.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-9.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-10.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-11.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-12.jpg" alt="Affiche de film" loading="lazy">
+        <img class="reveal" src="assets/images/Groupe-OCP-Paris-investissement-cinema-film-immobilier-bureau-flexible-13.jpg" alt="Affiche de film" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ CONTACT -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="band is-gold">
+      <h2 class="band-title" id="contact-title">Contact</h2>
+    </div>
+
+    <div class="container formulaire">
+      <form id="contact-form" data-to="info@groupeocp.com" novalidate>
+        <div>
+          <label>Nom
+            <input type="text" name="nom" placeholder="Votre nom" required autocomplete="family-name">
+          </label>
+          <label>Prénom
+            <input type="text" name="prenom" placeholder="Votre prénom" required autocomplete="given-name">
+          </label>
+          <label>Mail
+            <input type="email" name="email" placeholder="Votre adresse mail" required autocomplete="email">
+          </label>
+          <div class="contact-details">
+            <p>Groupe OCP<br>66 avenue des Champs Élysées<br>75008 Paris</p>
+            <p><a href="tel:+33183643100">01 83 64 31 00</a></p>
+          </div>
+        </div>
+        <div>
+          <label>Message
+            <textarea name="message" placeholder="Écrivez votre message" required></textarea>
+          </label>
+          <div class="submit"><button type="submit">Envoyez</button></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================================================================ MENTIONS LÉGALES -->
+  <section id="mentions-legales" aria-labelledby="mentions-title" class="container mentions">
+    <h2 id="mentions-title">Mentions légales</h2>
+
+    <details>
+      <summary>Éditeur et hébergeur</summary>
+      <div class="body">
+        <p>Le Site internet <a href="https://www.groupeocp.com">www.groupeocp.com</a> est édité par la société GROUPE OCP, (ci-après dénommée la <em>« Société »</em>), société par actions simplifiée au capital de 63 329,10 euros, dont le siège social est situé au 49-51 Rue de Ponthieu, 75008, Paris, France, immatriculée au Registre du Commerce et des Sociétés sous le numéro 519 782 841, dont le numéro de TVA intracommunautaire est le FR 09 519 782 841.</p>
+        <p>Le Site <a href="https://www.groupeocp.com">www.groupeocp.com</a> est hébergé par la société GitHub, Inc. (service GitHub Pages), dont le siège social est situé au 88 Colin P Kelly Jr Street, San Francisco, CA 94107, États-Unis — téléphone : +1 877 448 4820.</p>
+        <p>Monsieur Jeremy OININO est directeur de la publication du Site internet.</p>
+        <p>Il est possible de contacter la Société à l’adresse indiquée en tête des présentes, via le formulaire de contact disponible sur le Site ou encore par courrier électronique à l’adresse <a href="mailto:info@groupeocp.com">info@groupeocp.com</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Protection des données personnelles</summary>
+      <div class="body">
+        <p>Dans le cadre de la bonne administration de ses services, la Société est susceptible de collecter certaines informations nominatives.</p>
+        <p>Ces informations sont nécessaires pour le traitement et la fourniture des services présentés par la Société sur le Site.</p>
+        <p>La Société collecte les données personnelles uniquement dans le respect des termes des présentes Mentions Légales et de toute instruction légale et raisonnable de l’utilisateur. Chaque partie prendra les mesures techniques et organisationnelles appropriées pour lutter contre le traitement non autorisé ou illégal des données personnelles ou leur perte, destruction ou détérioration accidentelle.</p>
+        <p>Conformément à la loi du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés et au règlement européen sur la protection des données personnelles (RGPD) l’utilisateur se voit informé que certaines informations lui sont demandées afin de permettre à la Société de fournir ses services de façon optimale.</p>
+        <p>Ces informations sont les suivantes :</p>
+        <ul>
+          <li>Nom ;</li>
+          <li>Prénom ;</li>
+          <li>Adresse mail.</li>
+        </ul>
+        <p>La Société pourra également utiliser ces données pour le traitement des demandes de l’utilisateur ainsi que pour renforcer et personnaliser sa communication notamment par les lettres/courriers électroniques d’information, et enfin pour personnaliser le Site en fonction des préférences constatées des utilisateurs.</p>
+        <p>Les données à caractère personnel communiquées seront détruites au plus tard six (6) mois après la fourniture des services.</p>
+        <p>La Société se réserve le droit de conserver certaines données afin de justifier, le cas échéant de la parfaite exécution de ses obligations contractuelles ou légales. Les données ainsi conservées seront limitées à ce que strictement nécessaire.</p>
+        <p><strong><em>Droits d’accès, de modification, d’opposition et de suppression</em></strong></p>
+        <p>Dans tous les cas, l’utilisateur dispose d’un droit d’accès, de modification, d’opposition et de suppression des données personnelles le concernant en écrivant à l’adresse suivante :</p>
+        <p><a href="mailto:dpo@groupeocp.com">dpo@groupeocp.com</a> en indiquant son nom, prénom, e-mail et adresse postale.</p>
+        <p>Conformément à la règlementation en vigueur, si le responsable de traitement a un doute raisonnable sur l’identité de l’utilisateur, il pourra lui demander de lui communiquer d’autres informations permettant de prouver son identité. Une copie de la pièce d’identité pourrait alors s’avérer nécessaire.</p>
+        <p>Une réponse sera alors adressée dans un délai de deux (2) mois suivant la réception de la demande.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Utilisation des cookies</summary>
+      <div class="body">
+        <p>Conformément aux délibérations de la CNIL n° 2020-091 et n° 2020-092 du 17 septembre 2020, la Société informe l’utilisateur que le Site ne dépose aucun cookie, qu’il s’agisse de cookies de mesure d’audience, de suivi publicitaire ou de partage sur les réseaux sociaux. Aucun bandeau de consentement n’est donc nécessaire.</p>
+        <p>Pour l’affichage de la page, le navigateur de l’utilisateur se connecte toutefois à des services tiers qui reçoivent à cette occasion son adresse IP : Google Fonts (polices de caractères) et OpenStreetMap (fonds de carte).</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Liens hypertextes</summary>
+      <div class="body">
+        <p>Le site peut contenir des liens hypertextes donnant accès à d’autres sites web édités et gérés par des tiers et non par la Société. La Société ne pourra être tenue responsable directement ou indirectement dans le cas où les dits tiers ne respecteraient pas les dispositions légales en vigueur.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Propriété intellectuelle</summary>
+      <div class="body">
+        <p>Toutes les marques, photographies, textes, commentaires, illustrations, images animées ou non, séquences vidéo, sons, ainsi que toutes les applications informatiques qui pourraient être utilisées pour faire fonctionner le Site et plus généralement tous les éléments reproduits ou utilisés sur le Site sont protégés par les lois en vigueur au titre de la propriété intellectuelle.</p>
+        <p>Ils sont la propriété pleine et entière de l’Éditeur ou de ses partenaires, sauf mentions particulières. Toute reproduction, représentation, utilisation ou adaptation, sous quelque forme que ce soit, de tout ou partie de ces éléments, y compris les applications informatiques, sans l’accord préalable et écrit de l’Éditeur, sont strictement interdites. Le fait pour l’Éditeur de ne pas engager de procédure dès la prise de connaissance de ces utilisations non autorisées ne vaut pas acceptation desdites utilisations et renonciation aux poursuites.</p>
+        <p>Seule l’utilisation pour un usage privé dans un cercle de famille est autorisée et toute autre utilisation est constitutive de contrefaçon et/ou d’atteinte aux droits voisins, sanctionnées par Code de la propriété intellectuelle.</p>
+        <p>La reprise de tout ou partie de ce contenu nécessite l’autorisation préalable de l’Éditeur ou du titulaire des droits sur ce contenu.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Crédits photographiques</summary>
+      <div class="body">
+        <p>Les photographies présentes sur ce site proviennent de sources différentes, mentionnées ci-après :</p>
+        <p>© Bougic – iStockphoto.com<br>© Joel Filipe on Unsplash<br>© Maciej Bledowski – 123RF<br>© Salome Watel on Unsplash<br>© Pascale Gueret – iStockphoto.com<br>© Drew Beamer on Unsplash<br>© Mediacorp<br>© Meero</p>
+        <p>Fond de carte : © OpenStreetMap contributors.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Attribution de juridiction – droit applicable</summary>
+      <div class="body">
+        <p>Les présentes mentions légales sont régies par la loi française.</p>
+        <p>En cas de litige susceptible de survenir à l’occasion de l’interprétation et/ou de l’exécution des présentes ou en relation avec les présentes mentions légales, les parties s’engagent à faire tous leurs efforts pour résoudre de façon amiable tous les litiges auxquels les présentes mentions légales peuvent donner lieu.</p>
+        <p>Ainsi, en cas de litige entre un utilisateur et la Société, les parties conviennent de négocier de bonne foi le règlement du litige. Si les parties ne parviennent pas à régler le litige après au moins trente (30) jours ouvrés de négociations, le litige sera réglé devant la juridiction ayant compétence exclusive.</p>
+        <p>Toutes les contestations, relatives notamment à la validité, à l’exécution, à l’interprétation, et/ou à la rupture des présentes mentions légales relèvent de la seule compétence des tribunaux du ressort du siège social de la Société.</p>
+        <p>Au cas où une quelconque partie du présent article serait jugée inopposable, les stipulations restantes du présent article continueront de produire tous leurs effets et seront interprétées et appliquées comme si la partie jugée inopposable ne figurait pas dans les présentes.</p>
+      </div>
+    </details>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="grid">
+      <div class="o-1">
+        <a href="#accueil"><img src="assets/images/logogris.svg" alt="Groupe OCP" width="165" height="45"></a>
+      </div>
+      <div class="o-3">
+        <h2>Groupe OCP</h2>
+        <div>66 avenue des Champs Elysées</div>
+        <div>75008</div>
+        <div>Paris</div>
+      </div>
+      <div class="o-4">
+        <h2><a href="#contact">Contact</a></h2>
+        —<br>
+        <p><a href="tel:+33183643100">01 83 64 31 00</a></p>
+      </div>
+      <div class="o-2">
+        <ul class="menu">
+          <li><a href="#immobilier">Immobilier</a></li>
+          <li><a href="#innovation">Innovation</a></li>
+          <li><a href="#cinema">Cinéma</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="bottom">
+      <div class="copyright">
+        <span>© Groupe OCP <span id="year">2026</span></span>
+        <a href="#mentions-legales">Mentions légales</a>
+      </div>
+      <div>
+        <h2>Conception</h2>
+        <p><a href="https://agencele6.com" target="_blank" rel="noopener noreferrer">Agence le 6</a></p>
+        <h2>Développement</h2>
+        <p><a href="https://pixies-agency.fr" target="_blank" rel="noopener noreferrer">Agence Pixies</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Fenêtre implantation -->
+<div class="modal" id="implantation-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="modal-title"></h3>
+      <button class="modal-close" type="button" aria-label="Fermer"></button>
+    </div>
+    <div class="slider">
+      <div class="slides"></div>
+      <button class="slider-nav prev" type="button" aria-label="Image précédente"></button>
+      <button class="slider-nav next" type="button" aria-label="Image suivante"></button>
+      <span class="slider-count"></span>
+    </div>
+  </div>
+</div>
+
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
