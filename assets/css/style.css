@@ -252,7 +252,7 @@ section[id], div[id].anchor { scroll-margin-top: var(--header-h-small); }
 }
 
 /* --------------------------------------------------------------------------
-   Implantations : carte + liste + fenêtre
+   Implantations : carte + fenêtre
    -------------------------------------------------------------------------- */
 .implantations { position: relative; padding-top: 30px; }
 .implantations h2 { margin-bottom: 25px; }
@@ -267,21 +267,6 @@ section[id], div[id].anchor { scroll-margin-top: var(--header-h-small); }
 .leaflet-container a.leaflet-popup-close-button { color: #000; }
 .leaflet-popup-content { font-size: 1.2rem; font-weight: 500; text-transform: uppercase; margin: 10px 14px; }
 .leaflet-popup-content-wrapper { border-radius: 8px; }
-
-.implantation-list { display: grid; grid-template-columns: 1fr; gap: 0; margin: 30px 0 50px; }
-.implantation-list button {
-  display: flex; align-items: center; gap: 14px; width: 100%; text-align: left;
-  background: none; border: 1px solid #787878; border-top: 0; padding: 10px 15px 8px; cursor: pointer;
-  font-size: 1.2rem; font-weight: 500; text-transform: uppercase; color: #000; transition: background .2s ease;
-}
-.implantation-list button:first-child { border-top: 1px solid #787878; }
-.implantation-list button:hover { background: var(--beige); }
-.implantation-list button img { width: 38px; }
-@media (min-width: 48em) {
-  .implantation-list { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .implantation-list button { border: 1px solid #787878 !important; }
-}
-@media (min-width: 64em) { .implantation-list { grid-template-columns: repeat(4, 1fr); } }
 
 .modal { position: fixed; inset: 0; z-index: 2000; display: none; align-items: center; justify-content: center; padding: 16px; background: rgba(0,0,0,.6); }
 .modal.is-open { display: flex; }
@@ -329,29 +314,6 @@ section[id], div[id].anchor { scroll-margin-top: var(--header-h-small); }
 .movies-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .movies-grid img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; box-shadow: 0 2px 10px rgba(0,0,0,.12); }
 @media (min-width: 48em) { .movies-grid { grid-template-columns: repeat(4, 1fr); } }
-
-/* --------------------------------------------------------------------------
-   Contact
-   -------------------------------------------------------------------------- */
-.formulaire { margin: 80px auto; }
-.formulaire form { display: grid; grid-template-columns: 1fr; gap: 20px 40px; }
-@media (min-width: 48em) { .formulaire form { grid-template-columns: 1fr 2fr; } }
-.formulaire label { display: block; text-transform: uppercase; margin-bottom: 35px; }
-.formulaire input, .formulaire textarea {
-  display: block; width: 100%; border: 0; border-bottom: 1px solid #000; border-radius: 0; background: none;
-  font: inherit; padding: 8px 0; margin-top: 4px; text-transform: none;
-}
-.formulaire input::placeholder, .formulaire textarea::placeholder { font-style: italic; color: #777; }
-.formulaire input:focus, .formulaire textarea:focus { outline: none; border-bottom-color: var(--gold); }
-.formulaire textarea { min-height: 220px; resize: vertical; }
-.formulaire .submit { display: flex; justify-content: flex-end; }
-.formulaire button {
-  border: 1px solid var(--gold); border-radius: 20px; text-transform: uppercase; font-size: 1.2rem;
-  padding: 10px 35px; background: var(--white); width: 150px; cursor: pointer; transition: all .3s ease;
-}
-.formulaire button:hover { background: var(--gold); color: var(--white); }
-.formulaire .contact-details { margin-top: 20px; font-size: 1.4rem; }
-.formulaire .contact-details a:hover { color: var(--gold); }
 
 /* --------------------------------------------------------------------------
    Mentions légales

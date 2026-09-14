@@ -489,16 +489,6 @@
   modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal(); });
 
-  /* liste cliquable */
-  var list = document.getElementById('implantation-list');
-  IMPLANTATIONS.forEach(function (item, i) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.innerHTML = '<img src="assets/images/logo_picto_mini.svg" alt=""><span>' + item.name + '</span>';
-    b.addEventListener('click', function () { openImplantation(item); });
-    list.appendChild(b);
-  });
-
   /* ---------------------------------------------------------------- carte (Leaflet + fond CARTO) */
   var mapEl = document.getElementById('map');
   if (mapEl && window.L) {
@@ -515,18 +505,6 @@
     });
     /* le rendu de la carte doit être recalculé si la page change de largeur */
     window.addEventListener('resize', function () { map.invalidateSize(); });
-  }
-
-  /* ---------------------------------------------------------------- formulaire de contact (mailto) */
-  var form = document.getElementById('contact-form');
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var f = form.elements;
-      var subject = 'Contact via groupeocp.com - ' + f.prenom.value.trim() + ' ' + f.nom.value.trim();
-      var body = f.message.value.trim() + '\n\n--\n' + f.prenom.value.trim() + ' ' + f.nom.value.trim() + '\n' + f.email.value.trim();
-      window.location.href = 'mailto:' + form.getAttribute('data-to') + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    });
   }
 
   document.getElementById('year').textContent = String(new Date().getFullYear());
